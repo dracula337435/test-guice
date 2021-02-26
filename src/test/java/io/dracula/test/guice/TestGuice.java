@@ -21,6 +21,10 @@ public class TestGuice {
         billingService.print();
         billingService = injector.getInstance(BillingService.class);
         billingService.print();
+        //
+        injector = Guice.createInjector(new MyModule());
+        billingService = injector.getInstance(BillingService.class);
+        billingService.print();
     }
 
     public static class MyModule extends AbstractModule {
