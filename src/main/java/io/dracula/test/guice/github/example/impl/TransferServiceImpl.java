@@ -1,11 +1,11 @@
 package io.dracula.test.guice.github.example.impl;
 
-import io.dracula.test.guice.github.example.HelloService;
+import io.dracula.test.guice.github.example.TransferService;
 
 import javax.inject.Singleton;
 
 @Singleton
-public class HelloServiceImpl implements HelloService {
+public class TransferServiceImpl implements TransferService {
 
     @Override
     public void print() {

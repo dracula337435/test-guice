@@ -4,9 +4,9 @@ import com.google.inject.AbstractModule;
 import com.google.inject.Guice;
 import com.google.inject.Injector;
 import io.dracula.test.guice.github.example.BillingService;
-import io.dracula.test.guice.github.example.HelloService;
+import io.dracula.test.guice.github.example.TransferService;
 import io.dracula.test.guice.github.example.impl.BillingServiceImpl;
-import io.dracula.test.guice.github.example.impl.HelloServiceImpl;
+import io.dracula.test.guice.github.example.impl.TransferServiceImpl;
 import org.junit.Test;
 
 /**
@@ -30,7 +30,7 @@ public class TestGuice {
     public static class MyModule extends AbstractModule {
         @Override
         protected void configure() {
-            bind(HelloService.class).to(HelloServiceImpl.class);
+            bind(TransferService.class).to(TransferServiceImpl.class);
             bind(BillingService.class).to(BillingServiceImpl.class);
         }
     }
